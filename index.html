@@ -32,6 +32,7 @@
 					<h1>HTML/CSS/JS Fundamentals</h1>
 					<p>I am ready to learn how to build websites</p>
 					<p id="student-name">Marian Huliak</p>
+					<input id='changename' type='button' value='Switch To RM'/>
 					<div class="clock"></div>
 				</div>
 			</div>
@@ -130,6 +131,16 @@
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/clock.js"></script>
 	<script src="assets/js/currency.js"></script>
+        <script>
+		$(function(){
+
+			$("#changename").click(function(){
+
+				$("#student-name").text('Roman Makarevych');
+				
+			});
+		});
+	</script>
 </body>
 
 </html>
